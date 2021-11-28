@@ -1,0 +1,30 @@
+{
+    "Chips": {
+        "Front-End": {
+            "fe1": "HTML5",
+            "fe2": "CSS(CSS3, FlexBox, Grid CSS)",
+            "fe3": "SASS",
+            "fe4": "JavaScript(EcmaScript)",
+            "fe5": "jQuery",
+            "fe6": "VueJS",
+            "fe7": "ReactJS"
+        },
+        "Back-End": {
+            "be1": "PHP",
+            "be2": "Python(Flask)",
+            "be3": "Python(Fast-API)",
+            "be4": "Golang",
+            "be5": "MySQL/MariaDB",
+            "be6": "PostgreSQL",
+            "be7": "MongoDB",
+            "be8": "FireBase",
+            "be9": "Docker",
+            "be10": "Supervisor"
+        },
+        "OS / Deploy": {
+            "os1": "Windows",
+            "os2": "Linux",
+            "os3": "Mac OS"
+        }
+    }
+}
