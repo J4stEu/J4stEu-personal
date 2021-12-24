@@ -383,6 +383,10 @@ export default {
     position: relative;
     margin: auto;
     margin-top: $offsetVal * 3 + px;
+    padding: $offsetVal + px;
+  }
+  .avatarImage, .thoughts {
+    padding: 0;
   }
   svg {
     position: relative;

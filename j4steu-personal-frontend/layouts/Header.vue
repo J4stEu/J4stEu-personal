@@ -62,6 +62,10 @@ export default {
         }
 
         .menu {
+            @media screen and (min-width:0px) and (max-width:546px) {
+              display: none !important;
+            }
+
             a {
                 margin: $offsetVal / 2 + px;
                 color: black;
@@ -80,6 +84,10 @@ export default {
                     color: $brown;
                 }
             }
+        }
+
+        span {
+          white-space: nowrap;
         }
     }
 </style>

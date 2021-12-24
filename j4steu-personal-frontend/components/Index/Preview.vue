@@ -59,18 +59,27 @@ export default {
         padding: $offsetVal / 2 + px;
         background: rgba(34, 32, 76, 0.2);
         font-weight: bold;
-        text-align: center;
         color: black;
         display: flex !important;
-        // box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
 
         &:first-child{
           border-radius: 6px 0 0 6px;
+
+          @media screen and (min-width:0px) and (max-width:768px) {
+            border-radius: 6px 6px 0 0;
+          }
         }
         &:last-child{
           border-radius: 0 6px 6px 0;
           background: $purple;
           color: white;
+
+          @media screen and (min-width:0px) and (max-width:768px) {
+            border-radius: 0 0 6px 6px;
+          }
         }
       }
     }

@@ -35,11 +35,6 @@ export default {
         margin-top: $offsetVal + px;
         padding: 0px $offsetVal + px;
         color: black;
-
-        div {
-            // padding: 0px $offsetVal * 4 + px;
-            text-align: justify;
-        }
     }
     h1 {
         font-weight: bold;
