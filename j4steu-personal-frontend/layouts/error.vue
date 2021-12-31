@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
     #notFound {
         width: 100vw;
-        height: calc(100% - $offsetVal * 3 + px);
+        height: calc(100% - #{$offsetVal * 3 + px});
         margin-top: $offsetVal * 3 + px;
         overflow: hidden;
 
