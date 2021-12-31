@@ -218,7 +218,6 @@ section {
 
   div {
     width: 100%;
-    // filter: blur(1px);
 
     &:first-child {
       gap: $offsetVal * 2 + px;

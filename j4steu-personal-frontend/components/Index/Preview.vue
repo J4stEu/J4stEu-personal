@@ -52,8 +52,9 @@ export default {
       }
     }
     .topPreview {
-      padding: $offsetVal + px;
+      padding: 0 $offsetVal + px;
       margin: 0;
+      margin-top: $offsetVal + px;
 
       h1 {
         padding: $offsetVal / 2 + px;
@@ -86,9 +87,25 @@ export default {
     .bottomPreview {
       color: black;
       margin-top: $offsetVal + px;
+      @media screen and (min-width:0px) and (max-width:768px) {
+        margin-top: 0;
+      }
 
       div {
         padding: 0;
+
+        &:last-child {
+
+          @media screen and (min-width:0px) and (max-width:768px) {
+            margin-top: $offsetVal / 2 + px;
+          }
+
+          h1, p {
+            @media screen and (min-width:0px) and (max-width:768px) {
+              text-align: center;
+            }
+          }
+        }
       }
 
       h1 {

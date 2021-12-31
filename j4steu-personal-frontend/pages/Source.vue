@@ -46,14 +46,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#source {
-  width: 100vw;
-  height: calc(100% - $offsetVal * 3 + px);
-  margin-top: $offsetVal * 3 + px;
+  #source {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    margin-top: $offsetVal * 3 + px;
 
-  @media screen and (min-width: 0px) and (max-width: 768px) {
-    padding-top: $offsetVal * 4 + px;
-    height: auto;
+    @media screen and (min-width: 0px) and (max-width: 768px) {
+      height: auto;
+    }
   }
-}
+  section {
+    @media screen and (min-width: 0px) and (max-width: 768px) {
+      justify-content: flex-start !important;
+    }
+  }
 </style>

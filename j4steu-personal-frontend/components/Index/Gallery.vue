@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     getImgUrl (value) {
-      return require(`@/assets/img/gallery/${value + 1}.jpeg`);
+      return require(`@/assets/img/gallery/${value + 1}.jpg`);
     },
     switchGallery (value) {
       this.gallery = value;
@@ -76,7 +76,8 @@ export default {
                 justify-content: center;
 
                 img {
-                    width: 320px;
+                    width: 35vh;
+                    // height: 380px;
                 }
             }
         }

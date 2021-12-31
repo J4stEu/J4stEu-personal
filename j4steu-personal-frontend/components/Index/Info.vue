@@ -44,5 +44,6 @@ export default {
     p {
         margin-top: $offsetVal / 2 + px;
         text-indent: 1em;
+        text-align: justify;
     }
 </style>>

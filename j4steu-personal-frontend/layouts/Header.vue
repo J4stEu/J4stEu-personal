@@ -7,22 +7,57 @@
             <b-icon
               icon="home"
             />
-            <span>J4stEu - Just Eugene</span>
+            <span class="defaultAccent">J4stEu - Just Eugene</span>
+            <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <nuxt-link to="/works">
+            <!-- <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'Works'}">
               Works
             </nuxt-link>
-            <nuxt-link to="/posts">
+            <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'Posts'}">
               Posts
-            </nuxt-link>
-            <nuxt-link to="/source">
+            </nuxt-link> -->
+            <nuxt-link to="/source" :class="{routeAccent: currentRouteName === 'Source'}">
               Source
             </nuxt-link>
           </div>
         </div>
-        <div class="themeMode is-flex is-align-items-center">
-          NM
+        <div class="is-flex is-align-items-center">
+          <div class="mobileMenuContainer is-flex is-align-items-center">
+            <b-dropdown aria-role="list" position="is-bottom-left" :mobile-modal="false">
+              <template #trigger="{ active }">
+                <div class="is-flex is-align-items-center">
+                  <b-icon
+                    icon="chevron-double-down"
+                  />
+                  <p
+                    class="mobileMenu"
+                    :icon-right="active ? 'menu-up' : 'menu-down'"
+                  >
+                    Menu
+                  </p>
+                </div>
+              </template>
+              <!-- <b-dropdown-item aria-role="listitem">
+                <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'Works'}">
+                  Works
+                </nuxt-link>
+              </b-dropdown-item>
+              <b-dropdown-item aria-role="listitem">
+                <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'Works'}">
+                  Posts
+                </nuxt-link>
+              </b-dropdown-item> -->
+              <b-dropdown-item aria-role="listitem">
+                <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'Works'}">
+                  Source
+                </nuxt-link>
+              </b-dropdown-item>
+            </b-dropdown>
+          </div>
+          <!-- <div class="themeMode">
+            NM
+          </div> -->
         </div>
       </nav>
     </header>
@@ -34,9 +69,16 @@
 <script>
 // import Avatar from "~/components/Avatar.vue";
 export default {
-  // components: {
-  //   Avatar
-  // }
+  head () {
+    return {
+      title: "J4stEu Personal"
+    };
+  },
+  computed: {
+    currentRouteName () {
+      return this.$route.name;
+    }
+  }
 };
 </script>
 
@@ -86,8 +128,35 @@ export default {
             }
         }
 
+        .mobileMenuContainer {
+          margin: $offsetVal + px;
+          color: black;
+          cursor: pointer;
+
+          @media screen and (min-width:547px) {
+            display: none !important;
+          }
+
+          a {
+            color: black;
+          }
+        }
+
         span {
           white-space: nowrap;
         }
+    }
+    .defaultAccent {
+      @media screen and (min-width:0px) and (max-width: 453px) {
+        display: none !important;
+      }
+    }
+    .minMobileAccent {
+      @media screen and (min-width: 453px) {
+        display: none !important;
+      }
+    }
+    .routeAccent {
+      border-bottom: 2px solid $purple !important;
     }
 </style>

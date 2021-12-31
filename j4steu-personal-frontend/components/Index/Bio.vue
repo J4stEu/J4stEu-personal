@@ -62,6 +62,7 @@ export default {
           display: flex;
           margin-top: $offsetVal / 2 + px;
           text-indent: 1em;
+          text-align: justify;
 
           strong {
             min-width: 150px;

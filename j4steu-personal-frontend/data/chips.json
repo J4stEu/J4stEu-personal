@@ -2,12 +2,11 @@
     "Chips": {
         "Front-End": {
             "fe1": "HTML(HTML5)",
-            "fe2": "CSS(CSS3, CSS FlexBox, CSS Grid)",
-            "fe3": "SASS",
-            "fe4": "JavaScript(EcmaScript)",
-            "fe5": "jQuery",
-            "fe6": "VueJS",
-            "fe7": "ReactJS"
+            "fe2": "CSS(CSS3, CSS FlexBox, CSS Grid, SASS)",
+            "fe3": "JavaScript(EcmaScript)",
+            "fe4": "jQuery",
+            "fe5": "VueJS",
+            "fe6": "ReactJS"
         },
         "Back-End": {
             "be1": "PHP",

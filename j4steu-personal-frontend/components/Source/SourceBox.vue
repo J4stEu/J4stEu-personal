@@ -2,14 +2,15 @@
   <div class="box">
     <article class="media">
       <div class="media-left">
-        <figure class="image is-128x128">
+        <!-- <figure class="image is-128x128">
           <img :src="require('@/assets/img/j4steu.jpeg')" alt="Image">
-        </figure>
+        </figure> -->
+        <div class="previewImage" />
       </div>
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>Eugene Nikonov</strong> <br><small>@J4stEu</small><br><small>© 2021 J4stEu</small>
+            <strong>Eugene Nikonov</strong> <br><small>© 2021 J4stEu.</small><br><small>All Rights Reserved.</small><br>
           </p>
           <!-- <div class="contacs-desktop">
             <a href="https://github.com/J4stEu" target="blank">
@@ -60,15 +61,15 @@
       </div>
       <div>
         <p>This site source</p>
-        <a href="https://github.com/J4stEu" target="blank">
-          <b-taglist attached>
+        <a href="https://github.com/J4stEu/j4steu-personal" target="blank">
+          <b-taglist class="is-flex-wrap-nowrap" attached>
             <b-tag type="is-dark">
               <b-icon
                 icon="github"
               />
             </b-tag>
             <b-tag type="is-dark">
-              github.com/J4stEu
+              J4stEu Personal
             </b-tag>
           </b-taglist>
         </a>
@@ -86,11 +87,20 @@
         padding: $offsetVal + px;
         margin: $offsetVal + px;
     }
-    img {
-      border-radius: 6px;
-    }
-    .is-128x128 {
-      height: auto;
+    // img {
+    //   border-radius: 6px;
+    // }
+    // .is-128x128 {
+    //   height: auto;
+    // }
+    .previewImage {
+      width: $offsetVal * 3 + px;
+      height: $offsetVal * 3 + px;
+      // border: 2px solid $purple;
+      border-radius: 50%;
+      background: url("@/assets/img/j4steu.jpeg");
+      background-size: cover;
+      background-position: center;
     }
     p {
       margin-top: $offsetVal/3 + px !important;
@@ -101,7 +111,7 @@
     .content {
       p {
         margin-top: 0 !important;
-        white-space: nowrap;
+        // white-space: nowrap;
       }
     }
     .source {

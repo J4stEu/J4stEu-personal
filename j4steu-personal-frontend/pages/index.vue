@@ -13,6 +13,7 @@
       :events="bio.Bio.Events"
     />
     <Gallery />
+    <Contacts />
   </div>
 </template>
 
@@ -22,13 +23,15 @@ import Preview from "~/components/Index/Preview.vue";
 import Info from "~/components/Index/Info.vue";
 import Bio from "~/components/Index/Bio.vue";
 import Gallery from "~/components/Index/Gallery.vue";
+import Contacts from "~/components/Index/Contacts.vue";
 export default {
   components: {
     Avatar,
     Preview,
     Info,
     Bio,
-    Gallery
+    Gallery,
+    Contacts
   },
   layout: 'Header',
   data () {
@@ -46,8 +49,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .pageRoute {
-    position: absolute;
-    z-index: 1;
-  }
+
 </style>
