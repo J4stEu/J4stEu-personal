@@ -11,12 +11,12 @@
             <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <!-- <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'Works'}">
+            <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'Works'}">
               Works
             </nuxt-link>
             <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'Posts'}">
               Posts
-            </nuxt-link> -->
+            </nuxt-link>
             <nuxt-link to="/source" :class="{routeAccent: currentRouteName === 'Source'}">
               Source
             </nuxt-link>
@@ -38,20 +38,26 @@
                   </p>
                 </div>
               </template>
-              <!-- <b-dropdown-item aria-role="listitem">
-                <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'Works'}">
-                  Works
-                </nuxt-link>
+              <b-dropdown-item aria-role="listitem">
+                <client-only>
+                  <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'Works'}">
+                    Works
+                  </nuxt-link>
+                </client-only>
               </b-dropdown-item>
               <b-dropdown-item aria-role="listitem">
-                <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'Works'}">
-                  Posts
-                </nuxt-link>
-              </b-dropdown-item> -->
+                <client-only>
+                  <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'Posts'}">
+                    Posts
+                  </nuxt-link>
+                </client-only>
+              </b-dropdown-item>
               <b-dropdown-item aria-role="listitem">
-                <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'Works'}">
-                  Source
-                </nuxt-link>
+                <client-only>
+                  <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'Source'}">
+                    Source
+                  </nuxt-link>
+                </client-only>
               </b-dropdown-item>
             </b-dropdown>
           </div>
@@ -69,11 +75,6 @@
 <script>
 // import Avatar from "~/components/Avatar.vue";
 export default {
-  head () {
-    return {
-      title: "J4stEu Personal"
-    };
-  },
   computed: {
     currentRouteName () {
       return this.$route.name;

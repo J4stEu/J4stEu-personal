@@ -1,39 +1,39 @@
 <template>
   <div id="main">
-    <Avatar />
-    <Preview />
-    <Info
+    <avatar />
+    <preview />
+    <info
       v-for="(infoItem, infoName) in info.Info"
       :key="infoName"
       :title="infoItem.Title"
       :text="infoItem.Text"
     />
-    <Bio
+    <bio
       :title="bio.Bio.Title"
       :events="bio.Bio.Events"
     />
-    <Gallery />
-    <Contacts />
+    <gallery />
+    <contacts />
   </div>
 </template>
 
 <script>
-import Avatar from "~/components/Index/Avatar.vue";
-import Preview from "~/components/Index/Preview.vue";
-import Info from "~/components/Index/Info.vue";
-import Bio from "~/components/Index/Bio.vue";
-import Gallery from "~/components/Index/Gallery.vue";
-import Contacts from "~/components/Index/Contacts.vue";
+import avatar from "~/components/index/avatar.vue";
+import preview from "~/components/index/preview.vue";
+import info from "~/components/index/info.vue";
+import bio from "~/components/index/bio.vue";
+import gallery from "~/components/index/gallery.vue";
+import contacts from "~/components/index/contacts.vue";
 export default {
   components: {
-    Avatar,
-    Preview,
-    Info,
-    Bio,
-    Gallery,
-    Contacts
+    avatar,
+    preview,
+    info,
+    bio,
+    gallery,
+    contacts
   },
-  layout: 'Header',
+  layout: 'header',
   data () {
     return {
       info: require("~/data/info.json"),

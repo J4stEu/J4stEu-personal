@@ -37,7 +37,7 @@ export default {
   // components: {
   //   Work
   // },
-  layout: 'Header',
+  layout: 'header',
   data () {
     return {
       works: require("~/data/works.json")

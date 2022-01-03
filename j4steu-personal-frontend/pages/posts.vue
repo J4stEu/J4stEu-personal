@@ -7,17 +7,17 @@
       is-justify-content-flex-start
       is-align-items-center"
   >
-    <Post />
+    <post />
   </div>
 </template>
 
 <script>
-import Post from "~/components/Posts/Post.vue";
+import post from "~/components/posts/post.vue";
 export default {
   components: {
-    Post
+    post
   },
-  layout: 'Header',
+  layout: 'header',
   computed: {
     currentRouteName () {
       return this.$route.name;

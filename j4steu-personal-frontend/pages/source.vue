@@ -17,21 +17,21 @@
         is-align-items-center
     "
     >
-      <SourceBackground :mouse-move-event="mouseMoveEvent" />
-      <SourceBox />
+      <sourceBackground :mouse-move-event="mouseMoveEvent" />
+      <sourceBox />
     </section>
   </div>
 </template>
 
 <script>
-import SourceBox from "~/components/Source/SourceBox.vue";
-import SourceBackground from "~/components/Source/SourceBackground.vue";
+import sourceBox from "~/components/source/sourceBox.vue";
+import sourceBackground from "~/components/source/sourceBackground.vue";
 export default {
   components: {
-    SourceBox,
-    SourceBackground
+    sourceBox,
+    sourceBackground
   },
-  layout: "Header",
+  layout: "header",
   data () {
     return {
       mouseMoveEvent: {}
