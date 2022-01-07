@@ -1,12 +1,10 @@
 <template>
   <section
-    id="Gallery"
+    id="gallery"
     class="
-            is-flex
-            is-flex-direction-column
-            container
-            is-max-desktop
-        "
+      container
+      is-max-desktop
+    "
   >
     <h1>More</h1>
     <b-carousel
@@ -56,7 +54,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #Gallery {
+    #gallery {
         margin-top: $offsetVal + px;
         padding: $offsetVal + px;
     }

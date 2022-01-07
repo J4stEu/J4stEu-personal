@@ -1,9 +1,7 @@
 <template>
-  <section
+  <div
     id="bio"
     class="
-        is-flex
-        is-flex-direction-column
         container
         is-max-desktop
     "
@@ -18,7 +16,7 @@
         <span>{{ event.event }}.</span>
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

@@ -1,57 +1,41 @@
 <template>
-  <section
+  <div
     id="contacts"
     class="
-        is-flex
-        is-flex-direction-column
         container
         is-max-desktop
     "
   >
     <h1>Find me here</h1>
     <div class="is-flex is-flex-direction-column">
-      <a href="https://github.com/J4stEu" target="blank">
+      <a
+        v-for="(contactItem, contactName) in contacts.Contacts"
+        :key="contactName"
+        :href="contactItem.Src"
+        target="blank"
+      >
         <b-taglist class="is-flex-wrap-nowrap" attached>
           <b-tag type="is-dark">
             <b-icon
-              icon="github"
+              :icon="contactItem.Icon"
             />
           </b-tag>
           <b-tag type="is-dark">
-            @ J4stEu
-          </b-tag>
-        </b-taglist>
-      </a>
-      <a href="https://vk.com/id188091326" target="blank">
-        <b-taglist class="is-flex-wrap-nowrap" attached>
-          <b-tag type="is-dark">
-            <b-icon
-              icon="vk"
-            />
-          </b-tag>
-          <b-tag type="is-dark">
-            @ Eugene Nikonov
-          </b-tag>
-        </b-taglist>
-      </a>
-      <a href="https://drive.google.com/file/d/1_A3sA3u7tvVKj1Gg_rGzPyV9Uqupn81i/view?usp=sharing" target="blank">
-        <b-taglist class="is-flex-wrap-nowrap" attached>
-          <b-tag type="is-dark">
-            <b-icon
-              icon="file-pdf"
-            />
-          </b-tag>
-          <b-tag type="is-dark">
-            Find me in PDF
+            {{ contactItem.Title }}
           </b-tag>
         </b-taglist>
       </a>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      contacts: require("~/data/contacts.json")
+    };
+  }
 };
 </script>
 

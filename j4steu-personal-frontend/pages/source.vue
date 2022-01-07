@@ -1,15 +1,17 @@
 <template>
-  <div
+  <section
     id="source"
     class="
       is-flex
       is-flex-direction-column
       is-justify-content-flex-start
       is-align-items-center
+      container
+      is-max-desktop
     "
     @mousemove="getMouseMove"
   >
-    <section
+    <div
       class="
         is-flex
         is-flex-direction-column
@@ -19,8 +21,8 @@
     >
       <sourceBackground :mouse-move-event="mouseMoveEvent" />
       <sourceBox />
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>

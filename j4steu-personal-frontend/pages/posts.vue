@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="posts"
     class="
       is-flex
@@ -8,7 +8,7 @@
       is-align-items-center"
   >
     <post />
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,13 @@
 <template>
-  <div id="main">
+  <section
+    id="main"
+    class="
+        is-flex
+        is-flex-direction-column
+        container
+        is-max-desktop
+    "
+  >
     <avatar />
     <preview />
     <info
@@ -14,7 +22,7 @@
     />
     <gallery />
     <contacts />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -39,11 +47,6 @@ export default {
       info: require("~/data/info.json"),
       bio: require("~/data/bio.json")
     };
-  },
-  computed: {
-    currentRouteName () {
-      return this.$route.name;
-    }
   }
 };
 </script>

@@ -2,10 +2,8 @@
   <section
     id="info"
     class="
-        is-flex
-        is-flex-direction-column
-        container
-        is-max-desktop
+      container
+      is-max-desktop
     "
   >
     <div>

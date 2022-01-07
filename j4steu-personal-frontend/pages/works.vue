@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="works"
     class="
       is-flex
@@ -28,7 +28,7 @@
       </div>
     </div> -->
     Nothing here yet...
-  </div>
+  </section>
 </template>
 
 <script>

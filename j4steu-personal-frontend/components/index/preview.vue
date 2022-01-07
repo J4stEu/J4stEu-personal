@@ -2,8 +2,6 @@
   <section
     id="preview"
     class="
-      is-flex
-      is-flex-direction-column
       container
       is-max-desktop
     "

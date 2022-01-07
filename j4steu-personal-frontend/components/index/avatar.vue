@@ -1,5 +1,12 @@
 <template>
-  <div id="avatar" class="container is-max-desktop columns">
+  <div
+    id="avatar"
+    class="
+        container
+        is-max-desktop
+        columns
+      "
+  >
     <div
       class="
         avatarImage
