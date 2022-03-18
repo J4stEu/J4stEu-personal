@@ -5,38 +5,33 @@
       is-flex
       is-flex-direction-column
       is-justify-content-flex-start
-      is-align-items-center"
+      is-align-items-center
+      container
+      is-max-desktop"
   >
-    <!-- <div
-      class="container
-        is-max-desktop"
+    <div
+      class="work-container"
     >
-      <div
-        class="
-        columns
-        "
-      >
-        <Work
-          v-for="(workItem, workName) in works.Works"
-          :key="workName"
-          :src="workItem.Src"
-          :preview="workItem.Previw"
-          :title="workItem.Title"
-          :text="workItem.About"
-          :stack="workItem.Stack"
-        />
-      </div>
-    </div> -->
-    Nothing here yet...
+      <work
+        v-for="(workItem, workName) in works.Works"
+        :key="workName"
+        :src="workItem.Src"
+        :preview="workItem.Previw"
+        :title="workItem.Title"
+        :text="workItem.About"
+        :stack="workItem.Stack"
+      />
+    </div>
+    <!-- Nothing here yet... -->
   </section>
 </template>
 
 <script>
-// import Work from "~/components/Works/Work.vue";
+import work from "~/components/works/work.vue";
 export default {
-  // components: {
-  //   Work
-  // },
+  components: {
+    work
+  },
   layout: 'header',
   data () {
     return {
@@ -60,5 +55,17 @@ export default {
     @media screen and (min-width: 0px) and (max-width: 768px) {
       height: auto;
     }
+  }
+  // .work-wrapper {
+  //   width: f;
+  // }
+  .work-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: $offsetVal + px;
+    padding: 0 $offsetVal + px;
+    justify-items: center;
+    align-items: center;
   }
 </style>

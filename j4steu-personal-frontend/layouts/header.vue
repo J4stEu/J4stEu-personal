@@ -11,13 +11,13 @@
             <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'Works'}">
+            <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'works'}">
               Works
             </nuxt-link>
-            <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'Posts'}">
+            <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'posts'}">
               Posts
             </nuxt-link>
-            <nuxt-link to="/source" :class="{routeAccent: currentRouteName === 'Source'}">
+            <nuxt-link to="/source" :class="{routeAccent: currentRouteName === 'source'}">
               Source
             </nuxt-link>
           </div>

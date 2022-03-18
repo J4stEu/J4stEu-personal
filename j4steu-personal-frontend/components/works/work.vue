@@ -1,20 +1,30 @@
 <template>
-  <div class="work column is-flex is-align-content-flex-start">
-    <h1>{{ title }}</h1>
-    <div class="workPreview" :style="`background-image: url(${preview})`">
-      <!-- <img :src="preview" alt="post preview"> -->
-    </div>
-    <!-- <b-taglist>
-      <b-tag
-        v-for="stackItem in stack"
-        :key="stackItem"
-        type="is-dark"
-      >
-        {{ stackItem }}
-      </b-tag>
-
-      <p>{{ text }}</p>
-    </b-taglist> -->
+  <div class="work">
+    <b-taglist>
+      <b-tooltip :label="src" type="is-dark">
+        <a :href="src" target="blank">
+          <b-taglist class="is-flex-wrap-nowrap" attached>
+            <b-tag type="is-dark">
+              <b-icon
+                icon="github"
+              />
+            </b-tag>
+            <b-tag type="is-dark">
+              {{ title }}
+            </b-tag>
+          </b-taglist>
+        </a>
+      </b-tooltip>
+    </b-taglist>
+    <div
+      class="workPreview"
+      :style="{
+        background: `url(${preview})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundRepeat: 'no-repeat'
+      }"
+    />
     <p>{{ text }}</p>
   </div>
 </template>
@@ -50,29 +60,18 @@ export default {
 
 <style lang="scss" scoped>
   .work {
-    min-width: 300px;
-    min-height: 300px;
+    width: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
   }
   .workPreview {
+    width: 100%;
+    height: 150px;
+    // border: 2px solid $purple;
     border-radius: 6px;
   }
-  // .title {
-
-  // }
-  h1 {
-    text-align: center;
-    border-bottom: 2px solid $purple;
-    width: max-content;
-    margin-bottom: $offsetVal / 2 + px;
-  }
-  // img {
-  //   width: 100%;
-  //   border-radius: 6px;
-  // }
   .tags {
     margin: 0;
   }
@@ -80,5 +79,9 @@ export default {
     font-size: 0.8em;
     // text-indent: 1em;
     text-align: center;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+    margin-top: $offsetVal / 2 + px;
   }
 </style>

@@ -8,3 +8,70 @@ $yellow: #EDD834;
 $red: #F24D16;
 $brown: #7D1424;
 $purple: #343276;
+
+// @import "~bulma/sass/utilities/_all";
+
+// $colors: mergeColorMaps(
+//     (
+//         "primary": (
+//             $primary,
+//             $primary-invert,
+//             $primary-light,
+//             $primary-dark,
+//         ),
+//         "white": (
+//             $white,
+//             $black,
+//         ),
+//         "black": (
+//             $black,
+//             $white,
+//         ),
+//         "light": (
+//             $light,
+//             $light-invert,
+//         ),
+//         "dark": (
+//             $dark,
+//             $dark-invert,
+//         ),
+//         "link": (
+//             $link,
+//             $link-invert,
+//             $link-light,
+//             $link-dark,
+//         ),
+//         "info": (
+//             $info,
+//             $info-invert,
+//             $info-light,
+//             $info-dark,
+//         ),
+//         "success": (
+//             $success,
+//             $success-invert,
+//             $success-light,
+//             $success-dark,
+//         ),
+//         "warning": (
+//             $warning,
+//             $warning-invert,
+//             $warning-light,
+//             $warning-dark,
+//         ),
+//         "danger": (
+//             $danger,
+//             $danger-invert,
+//             $danger-light,
+//             $danger-dark,
+//         ),
+//     ),
+//     $custom-colors
+// );
+
+// $tooltip-colors: $purple
+
+// // Import bulma styles
+// @import "~bulma";
+// // Import buefy styles
+// @import "~buefy/src/scss/buefy";

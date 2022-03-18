@@ -42,6 +42,7 @@ export default {
 <style lang="scss" scoped>
     #contacts {
         margin-top: $offsetVal + px;
+        margin: #{$offsetVal + px} 0 0 0;
         padding: 0px $offsetVal + px;
         color: black;
     }
@@ -54,8 +55,16 @@ export default {
         width: min-content;
     }
     div {
-        margin-top: $offsetVal / 2 + px;
-        margin-left: 1em;
+        margin: #{$offsetVal / 2 + px} #{$offsetVal / 2 + px};
+
+        a {
+          margin-bottom: $offsetVal / 3 + px;
+          width: fit-content;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
 
         span {
             display: flex !important;

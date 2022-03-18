@@ -390,7 +390,7 @@ export default {
     position: relative;
     margin: auto;
     margin-top: $offsetVal * 3 + px;
-    padding: $offsetVal + px;
+    padding: 0 30px;
   }
   .avatarImage, .thoughts {
     padding: 0;

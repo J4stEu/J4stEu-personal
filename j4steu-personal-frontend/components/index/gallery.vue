@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
     #gallery {
         margin-top: $offsetVal + px;
-        padding: $offsetVal + px;
+        padding: 0 $offsetVal + px;
     }
     h1 {
         font-weight: bold;
