@@ -1,2 +1,13 @@
 # j4steu-personal
-My personal web-site.
+My personal homepage.
+
+Stack:
+- HTML; 
+- CSS (Sass, FlexBox, Grid);
+- Nuxt js (Vue Router);
+- Buefy - lightweight library of responsive UI components for Vue.js;
+- 
+Design:
+- Affinity Designer.
+
+Src now (out of service): https://j4steu.github.io/
