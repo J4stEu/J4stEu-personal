@@ -6,7 +6,7 @@ Stack:
 - CSS (Sass, FlexBox, Grid);
 - Nuxt js (Vue Router);
 - Buefy - lightweight library of responsive UI components for Vue.js;
-- 
+
 Design:
 - Affinity Designer.
 
