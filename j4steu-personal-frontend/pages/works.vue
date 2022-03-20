@@ -22,7 +22,6 @@
         :stack="workItem.Stack"
       />
     </div>
-    <!-- Nothing here yet... -->
   </section>
 </template>
 
@@ -56,13 +55,10 @@ export default {
       height: auto;
     }
   }
-  // .work-wrapper {
-  //   width: f;
-  // }
   .work-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: $offsetVal + px;
     padding: 0 $offsetVal + px;
     justify-items: center;

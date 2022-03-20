@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
   #source {
     width: 100vw;
-    height: calc(100vh - 90px);
+    height: calc(100vh - #{$offsetVal * 3 + px});
     margin-top: $offsetVal * 3 + px;
 
     @media screen and (min-width: 0px) and (max-width: 768px) {

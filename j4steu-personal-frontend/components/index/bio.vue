@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss" scoped>
     #bio {
+        margin: 0;
         margin-top: $offsetVal + px;
         padding: 0px $offsetVal + px;
         color: black;

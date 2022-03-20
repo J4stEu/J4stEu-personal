@@ -25,6 +25,7 @@
         backgroundRepeat: 'no-repeat'
       }"
     />
+    <h1>{{ title }}</h1>
     <p>{{ text }}</p>
   </div>
 </template>
@@ -60,28 +61,28 @@ export default {
 
 <style lang="scss" scoped>
   .work {
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .workPreview {
     width: 100%;
     height: 150px;
-    // border: 2px solid $purple;
     border-radius: 6px;
   }
   .tags {
     margin: 0;
   }
+  h1 {
+    text-align: center;
+    margin-top: $offsetVal / 3 + px;
+  }
   p {
     font-size: 0.8em;
-    // text-indent: 1em;
     text-align: center;
-    height: 200px;
-    display: block;
-    overflow: hidden;
-    margin-top: $offsetVal / 2 + px;
+    margin-top: $offsetVal / 3 + px;
   }
 </style>
