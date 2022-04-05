@@ -1,18 +1,19 @@
 {
     "Chips": {
         "Front-End": {
-            "fe1": "HTML(HTML5)",
-            "fe2": "CSS(CSS3, CSS FlexBox, CSS Grid, SASS)",
-            "fe3": "JavaScript(EcmaScript)",
+            "fe1": "HTML (HTML5)",
+            "fe2": "CSS (CSS3, CSS FlexBox, CSS Grid, SASS)",
+            "fe3": "JavaScript / EcmaScript",
             "fe4": "jQuery",
-            "fe5": "VueJS",
-            "fe6": "ReactJS"
+            "fe5": "Vue.js (Vue.js 2/3, Vue router, Vuex)",
+            "fe6": "Nuxt.js (Vue router, Vuex, Vuetify, Buefy)",
+            "fe7": "React.js (Redux)"
         },
         "Back-End": {
-            "be1": "PHP",
-            "be2": "Python(Flask, Fast-API)",
+            "be1": "PHP (RedBeanPHP, Laravel)",
+            "be2": "Python (Flask, Fast-API)",
             "be3": "Golang",
-            "be4": "MySQL/MariaDB",
+            "be4": "MySQL / MariaDB",
             "be5": "PostgreSQL",
             "be6": "MongoDB",
             "be7": "FireBase"
@@ -23,6 +24,12 @@
             "os3": "Mac OS",
             "os4": "Docker",
             "os5": "Supervisor"
+        },
+        "Current tech stack": {
+            "cs1": "Nuxt.js",
+            "cs2": "Golang",
+            "cs3": "Nginx",
+            "cs4": "PostgreSQL"
         }
     }
 }

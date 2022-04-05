@@ -412,4 +412,4 @@ export default {
     50% {bottom: $offsetVal/2 + px}
     to {bottom: 0}
   }
-</style>>
+</style>

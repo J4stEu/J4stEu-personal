@@ -38,27 +38,27 @@
                   </p>
                 </div>
               </template>
-              <b-dropdown-item aria-role="listitem">
-                <client-only>
-                  <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'Works'}">
+              <client-only>
+                <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'works'}">
+                  <b-dropdown-item aria-role="listitem">
                     Works
-                  </nuxt-link>
-                </client-only>
-              </b-dropdown-item>
-              <b-dropdown-item aria-role="listitem">
-                <client-only>
-                  <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'Posts'}">
+                  </b-dropdown-item>
+                </nuxt-link>
+              </client-only>
+              <client-only>
+                <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'posts'}">
+                  <b-dropdown-item aria-role="listitem">
                     Posts
-                  </nuxt-link>
-                </client-only>
-              </b-dropdown-item>
-              <b-dropdown-item aria-role="listitem">
-                <client-only>
-                  <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'Source'}">
+                  </b-dropdown-item>
+                </nuxt-link>
+              </client-only>
+              <client-only>
+                <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'source'}">
+                  <b-dropdown-item aria-role="listitem">
                     Source
-                  </nuxt-link>
-                </client-only>
-              </b-dropdown-item>
+                  </b-dropdown-item>
+                </nuxt-link>
+              </client-only>
             </b-dropdown>
           </div>
           <!-- <div class="themeMode">

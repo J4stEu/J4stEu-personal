@@ -4,7 +4,7 @@
     class="
       is-flex
       is-flex-direction-column
-      is-justify-content-flex-start
+      is-justify-content-center-start
       is-align-items-center
       container
       is-max-desktop
