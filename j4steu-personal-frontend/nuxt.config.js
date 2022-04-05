@@ -1,4 +1,6 @@
 export default {
+  // for GitHub pages
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'J4stEu Personal',
