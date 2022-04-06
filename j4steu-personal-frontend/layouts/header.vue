@@ -39,23 +39,29 @@
                 </div>
               </template>
               <client-only>
-                <nuxt-link to="/works" :class="{routeMobileAccent: currentRouteName === 'works'}">
+                <nuxt-link to="/works">
                   <b-dropdown-item aria-role="listitem">
-                    Works
+                    <p :class="{mobileRouteAccent: currentRouteName === 'works'}">
+                      Works
+                    </p>
                   </b-dropdown-item>
                 </nuxt-link>
               </client-only>
               <client-only>
-                <nuxt-link to="/posts" :class="{routeMobileAccent: currentRouteName === 'posts'}">
+                <nuxt-link to="/posts">
                   <b-dropdown-item aria-role="listitem">
-                    Posts
+                    <p :class="{mobileRouteAccent: currentRouteName === 'posts'}">
+                      Posts
+                    </p>
                   </b-dropdown-item>
                 </nuxt-link>
               </client-only>
               <client-only>
-                <nuxt-link to="/source" :class="{routeMobileAccent: currentRouteName === 'source'}">
+                <nuxt-link to="/source">
                   <b-dropdown-item aria-role="listitem">
-                    Source
+                    <p :class="{mobileRouteAccent: currentRouteName === 'source'}">
+                      Source
+                    </p>
                   </b-dropdown-item>
                 </nuxt-link>
               </client-only>
@@ -93,6 +99,10 @@ export default {
         // background: rgba(237, 216, 52, 0.2);
         background: rgba(34, 32, 76, 0.2);
         backdrop-filter: blur(10px);
+
+        @supports not (backdrop-filter: blur(10px)) {
+          background: rgba(34, 32, 76, 0.3);
+        }
 
         nav {
             height: 100%;
@@ -159,5 +169,8 @@ export default {
     }
     .routeAccent {
       border-bottom: 2px solid $purple !important;
+    }
+    .mobileRouteAccent {
+      color: $purple !important;
     }
 </style>

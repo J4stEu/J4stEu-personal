@@ -86,6 +86,10 @@
         border: 3px solid $purple;
         padding: $offsetVal + px;
         margin: $offsetVal + px;
+
+        @supports not (backdrop-filter: blur(10px)) {
+          background: rgba(255, 255, 255, 0.9);
+        }
     }
     // img {
     //   border-radius: 6px;
