@@ -16,9 +16,12 @@
       >
         <b-taglist class="is-flex-wrap-nowrap" attached>
           <b-tag type="is-dark">
-            <b-icon
-              :icon="contactItem.Icon"
-            />
+            <div class="iconChipsContainer">
+              <VKIcon v-if=" contactItem.Icon === 'vk' " />
+              <GithubIcon v-if=" contactItem.Icon === 'github' " />
+              <FileIcon v-if=" contactItem.Icon === 'file' " />
+              <EmailIcon v-if=" contactItem.Icon === 'email' " />
+            </div>
           </b-tag>
           <b-tag type="is-dark">
             {{ contactItem.Title }}
@@ -30,10 +33,26 @@
 </template>
 
 <script>
+import VKIcon from "@/assets/icons/iconmonstr-vk-3.svg";
+import GithubIcon from "@/assets/icons/iconmonstr-github-1.svg";
+import FileIcon from "@/assets/icons/iconmonstr-file-34.svg";
+import EmailIcon from "@/assets/icons/iconmonstr-email-4.svg";
 export default {
+  components: {
+    VKIcon,
+    GithubIcon,
+    FileIcon,
+    EmailIcon
+  },
   data () {
     return {
-      contacts: require("~/data/contacts.json")
+      contacts: require("~/data/contacts.json"),
+      icons: {
+        github: GithubIcon,
+        mail: EmailIcon,
+        vk: VKIcon,
+        file: FileIcon
+      }
     };
   }
 };

@@ -44,9 +44,9 @@ export default {
     switchGallery (value) {
       this.gallery = value;
       if (value) {
-        return document.documentElement.classList.add('is-clipped');
+        return document.documentElement.classList.add("is-clipped");
       } else {
-        return document.documentElement.classList.remove('is-clipped');
+        return document.documentElement.classList.remove("is-clipped");
       }
     }
   }
@@ -64,6 +64,7 @@ export default {
         display: inline;
         width: min-content;
         margin-bottom: $offsetVal / 2 + px;
+        color: black;
     }
     .carousel {
 

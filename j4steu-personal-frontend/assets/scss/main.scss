@@ -18,3 +18,17 @@ body {
   position: absolute;
   z-index: 1;
 }
+
+.iconContainer {
+   margin: 0 $offsetVal/4 + px;
+
+   svg {
+       display: flex;
+   }
+}
+.iconChipsContainer {
+  margin: 0;
+  svg {
+    display: flex
+  }
+}

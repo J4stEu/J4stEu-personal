@@ -26,10 +26,9 @@
         <a :href="siteSource" target="blank">
           <b-taglist class="is-flex-wrap-nowrap" attached>
             <b-tag type="is-dark">
-              <b-icon
-                icon="open-in-new"
-                size="is-small"
-              />
+              <div class="iconChipsContainer">
+                <GithubIcon />
+              </div>
             </b-tag>
             <b-tag type="is-dark">
               J4stEu Personal
@@ -42,7 +41,11 @@
 </template>
 
 <script>
+import GithubIcon from "@/assets/icons/iconmonstr-github-1.svg";
 export default {
+  components: {
+    GithubIcon
+  },
   props: {
     creator: {
       type: String,

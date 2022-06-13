@@ -74,4 +74,4 @@ export default {
         text-indent: initial;
       }
     }
-</style>>
+</style>

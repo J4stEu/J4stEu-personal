@@ -41,7 +41,7 @@ export default {
     gallery,
     contacts
   },
-  layout: 'header',
+  layout: "header",
   data () {
     return {
       info: require("~/data/info.json"),

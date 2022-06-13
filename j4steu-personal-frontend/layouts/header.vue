@@ -4,16 +4,16 @@
       <nav class="container is-max-desktop is-flex is-justify-content-space-between is-align-content-center">
         <div class="is-flex">
           <nuxt-link to="/" class="home is-flex is-align-items-center">
-            <b-icon
-              icon="home"
-            />
+            <div class="iconContainer">
+              <HomeIcon />
+            </div>
             <span class="defaultAccent">J4stEu - Just Eugene</span>
             <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <nuxt-link to="/works" :class="{routeAccent: currentRouteName === 'works'}">
+            <a href="https://github.com/J4stEu" target="_blank" :class="{routeAccent: currentRouteName === 'works'}">
               Works
-            </nuxt-link>
+            </a>
             <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'posts'}">
               Posts
             </nuxt-link>
@@ -27,9 +27,9 @@
             <b-dropdown aria-role="list" position="is-bottom-left" :mobile-modal="false">
               <template #trigger="{ active }">
                 <div class="is-flex is-align-items-center">
-                  <b-icon
-                    icon="chevron-double-down"
-                  />
+                  <div class="dropDownMenuIcon iconContainer">
+                    <DropDownMenuIcon />
+                  </div>
                   <p
                     class="mobileMenu"
                     :icon-right="active ? 'menu-up' : 'menu-down'"
@@ -39,13 +39,13 @@
                 </div>
               </template>
               <client-only>
-                <nuxt-link to="/works">
+                <a href="https://github.com/J4stEu" target="_blank">
                   <b-dropdown-item aria-role="listitem">
                     <p :class="{mobileRouteAccent: currentRouteName === 'works'}">
                       Works
                     </p>
                   </b-dropdown-item>
-                </nuxt-link>
+                </a>
               </client-only>
               <client-only>
                 <nuxt-link to="/posts">
@@ -67,20 +67,21 @@
               </client-only>
             </b-dropdown>
           </div>
-          <!-- <div class="themeMode">
-            NM
-          </div> -->
         </div>
       </nav>
     </header>
-    <!-- <Avatar /> -->
     <Nuxt />
   </div>
 </template>
 
 <script>
-// import Avatar from "~/components/Avatar.vue";
+import HomeIcon from "@/assets/icons/iconmonstr-home-6.svg";
+import DropDownMenuIcon from "@/assets/icons/iconmonstr-arrow-31.svg";
 export default {
+  components: {
+    HomeIcon,
+    DropDownMenuIcon
+  },
   computed: {
     currentRouteName () {
       return this.$route.name;
@@ -146,6 +147,12 @@ export default {
 
           @media screen and (min-width:547px) {
             display: none !important;
+          }
+
+          .dropDownMenuIcon {
+            svg {
+                transform: rotate(90deg);
+            }
           }
 
           a {
