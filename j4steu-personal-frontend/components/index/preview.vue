@@ -81,6 +81,8 @@
       margin-top: $offsetVal + px;
       @media screen and (min-width:0px) and (max-width:768px) {
         margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
       }
 
       div {

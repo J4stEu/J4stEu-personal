@@ -11,9 +11,6 @@
             <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <a href="https://github.com/J4stEu" target="_blank" :class="{routeAccent: currentRouteName === 'works'}">
-              Works
-            </a>
             <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'posts'}">
               Posts
             </nuxt-link>
@@ -38,15 +35,6 @@
                   </p>
                 </div>
               </template>
-              <client-only>
-                <a href="https://github.com/J4stEu" target="_blank">
-                  <b-dropdown-item aria-role="listitem">
-                    <p :class="{mobileRouteAccent: currentRouteName === 'works'}">
-                      Works
-                    </p>
-                  </b-dropdown-item>
-                </a>
-              </client-only>
               <client-only>
                 <nuxt-link to="/posts">
                   <b-dropdown-item aria-role="listitem">
