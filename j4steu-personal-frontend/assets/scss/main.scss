@@ -28,7 +28,10 @@ body {
 }
 .iconChipsContainer {
   margin: 0;
+  display: inline-flex;
+  transform: translateY(2px);
+
   svg {
-    display: flex
+    //display: flex;
   }
 }

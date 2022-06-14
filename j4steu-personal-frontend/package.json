@@ -13,11 +13,14 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/composition-api": "^0.32.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "@pinia/nuxt": "^0.1.9",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "nuxt-buefy": "^0.4.8",
-    "nuxt-svg-loader": "^1.2.0"
+    "nuxt-svg-loader": "^1.2.0",
+    "pinia": "^2.0.14"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

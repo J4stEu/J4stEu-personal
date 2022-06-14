@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import post from "~/components/posts/post.vue";
+import post from "@/components/posts/post.vue";
 export default {
   components: {
     post
   },
-  layout: 'header',
+  layout: "header",
   computed: {
     currentRouteName () {
       return this.$route.name;

@@ -29,13 +29,13 @@
 </template>
 
 <script>
-import avatar from "~/components/index/avatar.vue";
-import preview from "~/components/index/preview.vue";
-import info from "~/components/index/info.vue";
-import bio from "~/components/index/bio.vue";
-import works from "~/components/index/works.vue";
-import gallery from "~/components/index/gallery.vue";
-import contacts from "~/components/index/contacts.vue";
+import avatar from "@/components/index/avatar.vue";
+import preview from "@/components/index/preview.vue";
+import info from "@/components/index/info.vue";
+import bio from "@/components/index/bio.vue";
+import works from "@/components/index/works.vue";
+import gallery from "@/components/index/gallery.vue";
+import contacts from "@/components/index/contacts.vue";
 export default {
   components: {
     avatar,

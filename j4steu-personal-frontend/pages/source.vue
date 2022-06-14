@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import sourceBox from "~/components/source/sourceBox.vue";
-import sourceBackground from "~/components/source/sourceBackground.vue";
+import sourceBox from "@/components/source/sourceBox.vue";
+import sourceBackground from "@/components/source/sourceBackground.vue";
 export default {
   components: {
     sourceBox,

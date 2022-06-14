@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  layout: 'Header'
+  layout: "Header"
 };
 </script>
 
