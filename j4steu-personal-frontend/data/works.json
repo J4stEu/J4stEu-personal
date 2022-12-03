@@ -1,0 +1,39 @@
+{
+    "Works": {
+        "Engs": {
+            "Title": "Engs",
+            "Previw": "https://raw.githubusercontent.com/J4stEu/engs/master/projectDemo/1.jpg",
+            "Src": "https://github.com/J4stEu/engs",
+            "About": "Engs - English School. This is a special project for me, as it is a regeneration of my first project in web development sphere. This site is about my father's english school. About, gallary, news, contacts and more.",
+            "Stack": ["HTML / CSS (Sass, FlexBox, Grid)", "Vue.JS (Vue CLI, Vue Router, Vuex)", "Python (Flask)"]
+        },
+        "Blockchain Python": {
+            "Title": "Blockchain Python",
+            "Previw": "https://raw.githubusercontent.com/J4stEu/blockchainPython/master/projectDemo/4.png",
+            "Src": "https://github.com/J4stEu/blockchainPython",
+            "About": "Creation of blockchain system on Python for further integration in different projects",
+            "Stack": ["Python", "Flask"]
+        },
+        "Magister": {
+            "Title": "Magister",
+            "Previw": "https://raw.githubusercontent.com/J4stEu/magister/main/projectDemo/7.jpg?token=AN2IQGDS4AK5GLXR5K3PIWDBZY6BU",
+            "Src": "https://github.com/J4stEu/magister",
+            "About": "Project for teachers and students to commit specific / scientific work without needance of thinking about personally document exchange.",
+            "Stack": ["HTML / CSS (Sass, FlexBox)", "JS(jQuery)", "PHP(RedBeanPhp)"]
+        },
+        "IPleak": {
+            "Title": "IPleak",
+            "Previw": "https://raw.githubusercontent.com/J4stEu/ipleak/master/projectDemo/ipleak_1.png",
+            "Src": "https://github.com/J4stEu/ipleak",
+            "About": "IPleak is the application that can give information about user only by his IP address.",
+            "Stack": ["HTML / CSS (Sass, FlexBox, Grid)", "Vue.JS (Vue CLI, Vue Router, Vuex)", "Python (Flask)"]
+        },
+        "Hard Reject": {
+            "Title": "Hard Reject",
+            "Previw": "https://raw.githubusercontent.com/J4stEu/HardReject/master/projectDemo/2.png",
+            "Src": "https://github.com/J4stEu/hardReject",
+            "About": "Project for teachers and students to commit specific / scientific work without needance of thinking about personally document exchange.",
+            "Stack": ["HTML / CSS (Sass, FlexBox, Grid)", "Vue.JS (Vue CLI, Vue Router, Vuex)", "Python (Flask)"]
+        }
+    }
+}

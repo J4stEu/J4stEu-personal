@@ -1,0 +1,24 @@
+{
+    "Contacts": {
+        "C1": {
+            "Title": "@ J4stEu",
+            "Src": "https://github.com/J4stEu",
+            "Icon": "github"
+        },
+        "C2": {
+            "Title": "NIKKSTUDIO3023@gmail.com",
+            "Src": "mailto:NIKKSTUDIO3023@gmail.com",
+            "Icon": "mailbox"
+        },
+        "C3": {
+            "Title": "@ Eugene Nikonov",
+            "Src": "https://vk.com/id188091326",
+            "Icon": "vk"
+        },
+        "C4": {
+            "Title": "Find me in PDF",
+            "Src": "https://drive.google.com/file/d/1_A3sA3u7tvVKj1Gg_rGzPyV9Uqupn81i/view?usp=sharing",
+            "Icon": "file-pdf"
+        }
+    }
+}

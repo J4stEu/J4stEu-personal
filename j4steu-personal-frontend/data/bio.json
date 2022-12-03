@@ -1,0 +1,35 @@
+{
+    "Bio": {
+        "Title": "Bio",
+        "Events": {
+            "b1": {
+                "year": "1999",
+                "event": "Born in Chita, Russia"
+            },
+            "b2": {
+                "year": "2016",
+                "event": "Graduated from College of Information Technologies as a programmer"
+            },
+            "b3": {
+                "year": "2017",
+                "event": "Graduated from College of Information Technologies as a web-developer"
+            },
+            "b4": {
+                "year": "2018 - present",
+                "event": "Graduated from School (School №49) and entered the University (SPbSUT, Saint-Petersburg, Russia)"
+            },
+            "b5": {
+                "year": "2018 - 2020",
+                "event": "Worked as a freelancer"
+            },
+            "b6": {
+                "year": "2021 - 2022",
+                "event": "Worked as a full-stack web-developer in NeoBit"
+            },
+            "b7": {
+                "year": "2022 - present",
+                "event": "Working on projects of self interest and open to offers"
+            }
+        } 
+    }
+}
