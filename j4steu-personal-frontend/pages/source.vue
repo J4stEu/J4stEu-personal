@@ -21,18 +21,34 @@
     >
       <sourceBackground :mouse-move-event="mouseMoveEvent" />
       <sourceBox
-        :creator="sourceData.Source.Creator"
-        :copyright="sourceData.Source.Copyright"
-        :rights="sourceData.Source.Rights"
-        :site-stack="sourceData.Source.SiteStack"
-        :site-source-name="sourceData.Source.SiteSourceName"
-        :site-source="sourceData.Source.SiteSource"
+        v-if="isEnglish"
+        :creator="sourceEng.Source.Creator"
+        :copyright="sourceEng.Source.Copyright"
+        :rights="sourceEng.Source.Rights"
+        :site-stack-title="sourceEng.Source.SiteStackTitle"
+        :site-stack="sourceEng.Source.SiteStack"
+        :site-source-title="sourceEng.Source.SiteSourceTitle"
+        :site-source-name="sourceEng.Source.SiteSourceName"
+        :site-source="sourceEng.Source.SiteSource"
+      />
+      <sourceBox
+        v-else
+        :creator="sourceRus.Source.Creator"
+        :copyright="sourceRus.Source.Copyright"
+        :rights="sourceRus.Source.Rights"
+        :site-stack-title="sourceRus.Source.SiteStackTitle"
+        :site-stack="sourceRus.Source.SiteStack"
+        :site-source-title="sourceRus.Source.SiteSourceTitle"
+        :site-source-name="sourceRus.Source.SiteSourceName"
+        :site-source="sourceRus.Source.SiteSource"
       />
     </div>
   </section>
 </template>
 
 <script>
+import { mapState } from 'pinia';
+import { useAppStore } from "@/store/useAppStore";
 import sourceBox from "@/components/source/sourceBox.vue";
 import sourceBackground from "@/components/source/sourceBackground.vue";
 export default {
@@ -44,8 +60,12 @@ export default {
   data () {
     return {
       mouseMoveEvent: {},
-      sourceData: require("~/data/source.json")
+      sourceEng: require("~/data/source_eng.json"),
+      sourceRus: require("~/data/source_rus.json")
     };
+  },
+  computed: {
+    ...mapState(useAppStore, ["isEnglish"])
   },
   methods: {
     getMouseMove (e) {

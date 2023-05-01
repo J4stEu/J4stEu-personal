@@ -7,7 +7,7 @@
     "
   >
     <h1 class="sectionTitle">
-      Works
+      {{ title }}
     </h1>
     <div class="columns sectionPreview">
       <div class="column is-flex is-justify-content-center">
@@ -37,6 +37,10 @@ export default {
     WorksTable
   },
   props: {
+    title: {
+      type: String,
+      default: "Works"
+    },
     works: {
       type: Array,
       default () {

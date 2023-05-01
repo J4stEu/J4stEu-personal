@@ -1,9 +1,11 @@
 {
     "Source": {
-        "Creator": "Eugene Nikonov",
+        "Creator": "Евгений Никонов",
         "Copyright": "© 2021 J4stEu.",
         "Rights": "All Rights Reserved.",
+        "SiteStackTitle": "Использованный стек технологий",
         "SiteStack": ["Nuxt.js", "Buefy"],
+        "SiteSourceTitle": "Репозиторий",
         "SiteSourceName": "J4stEu Personal",
         "SiteSource": "https://github.com/J4stEu/j4steu-personal"
     }

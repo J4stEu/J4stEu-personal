@@ -6,7 +6,7 @@
       is-max-desktop
     "
   >
-    <h1>More</h1>
+    <h1>{{ title }}</h1>
     <b-carousel
       :autoplay="false"
       indicator-custom
@@ -15,7 +15,7 @@
       :overlay="gallery"
       @click="switchGallery(true)"
     >
-      <b-carousel-item v-for="(item, i) in 7" :key="i">
+      <b-carousel-item v-for="(item, i) in 8" :key="i">
         <a class="image ">
           <img :src="getImgUrl(i)">
         </a>
@@ -32,6 +32,12 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      default: ""
+    }
+  },
   data () {
     return {
       gallery: false

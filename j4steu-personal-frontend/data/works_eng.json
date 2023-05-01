@@ -1,4 +1,5 @@
 {
+    "Title": "Works",
     "Works": [
         {
           "ID": 1,
@@ -6,7 +7,7 @@
           "Preview": "https://raw.githubusercontent.com/J4stEu/pocket-blockchain/master/blockchain_frontend/src/assets/favicon.png", 
           "Src": "https://github.com/J4stEu/pocket-blockchain",
           "Info": "Creation of blockchain system on Python for further integration in different projects",
-          "Stack": ["Vue.js 3", "Python", "Flask", "PostgreSQL"]
+          "Stack": ["Python Flask", "PostgreSQL", "Vue.js 3"]
         },
         {
           "ID": 2,
@@ -14,7 +15,7 @@
           "Preview": "https://raw.githubusercontent.com/J4stEu/J4stEu.github.io/main/j4steu-personal-frontend/static/favicon.png",
           "Src": "https://github.com/J4stEu/solib",
           "Info": "Solib - music streaming application",
-          "Stack": ["Vue.js 3", "Golang", "PosgreSQL"]
+          "Stack": ["Golang", "PosgreSQL", "Vue.js 3"]
         },
         {
           "ID": 3,
@@ -22,7 +23,7 @@
           "Preview": "https://raw.githubusercontent.com/J4stEu/engs/master/engs_frontend/public/favicon.ico",
           "Src": "https://github.com/J4stEu/engs",
           "Info": "Engs - English School. This is a special project for me, as it is a regeneration of my first project in web development sphere. This site is about my father's english school. About, gallary, news, contacts and more.",
-          "Stack": ["Vue.js 2", "Flask", "MariaDB"]
+          "Stack": ["Python Flask", "MySQL / MariaDB", "Vue.js 2"]
         },
         {
           "ID": 4,
@@ -30,7 +31,7 @@
           "Preview": "https://github.com/J4stEu/magister/blob/main/icons/main_icon.png?raw=true",
           "Src": "https://github.com/J4stEu/magister",
           "Info": "Project for teachers and students to commit specific / scientific work without needance of thinking about personally document exchange.",
-          "Stack": ["HTML/CSS", "jQuery", "RedBeanPhp"]
+          "Stack": ["PHP + RedBeanPHP ORM", "MySQL / MariaDB", "HTML / CSS", "jQuery"]
         },
         {
           "ID": 5,
@@ -38,15 +39,15 @@
           "Preview": "https://raw.githubusercontent.com/J4stEu/ipleak/master/frontend/ipleak/public/favicon.ico",
           "Src": "https://github.com/J4stEu/ipleak",
           "Info": "IPleak is the application that can give information about user only by his IP address.",
-          "Stack": ["Vue.js 2", "Flask"]
+          "Stack": ["Python Flask", "Vue.js 2"]
         },
         {
           "ID": 6,
           "Title": "hard-reject",
           "Preview": "https://raw.githubusercontent.com/J4stEu/hard-reject/master/icons/main_icon.png",
           "Src": "https://github.com/J4stEu/hardReject",
-          "Info": "Project for teachers and students to commit specific / scientific work without needance of thinking about personally document exchange.",
-          "Stack": ["HTML/CSS", "jQuery", "RedBeanPhp"]
+          "Info": "Project for start-up enthusiasts. Publish your project, attract investors",
+          "Stack": ["PHP + RedBeanPHP ORM", "MySQL / MariaDB", "HTML / CSS", "jQuery"]
         }
     ]
 }

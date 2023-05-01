@@ -1,0 +1,35 @@
+{
+    "Chips": {
+        "Front-End": {
+            "fe1": "HTML",
+            "fe2": "CSS",
+            "fe3": "JavaScript",
+            "fe4": "jQuery",
+            "fe5": "Vue.js",
+            "fe6": "Nuxt.js",
+            "fe7": "React.js"
+        },
+        "Back-End": {
+            "be1": "PHP",
+            "be2": "Python",   
+            "be3": "Golang",
+            "be4": {
+                "name": "Databases",
+                "subnames": "MySQL / MariaDB, PostgreSQL, MongoDB, FireBase"
+            }
+        },
+        "OS / Deploy": {
+            "os1": "Windows",
+            "os2": "Linux",
+            "os3": "Mac OS",
+            "os4": "Docker",
+            "os5": "Supervisor"
+        },
+        "Текущий стек технологий": {
+            "cs1": "Golang",
+            "cs2": "React.js",
+            "cs3": "PostgreSQL",
+            "cs4": "Nginx"
+        }
+    }
+}

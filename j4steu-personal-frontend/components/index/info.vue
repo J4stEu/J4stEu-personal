@@ -38,6 +38,7 @@ export default {
         font-weight: bold;
         border-bottom: 2px solid $purple;
         display: inline;
+        white-space: nowrap;
     }
     p {
         margin-top: $offsetVal / 2 + px;

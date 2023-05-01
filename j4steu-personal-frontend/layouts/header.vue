@@ -11,12 +11,15 @@
             <span class="minMobileAccent">J4stEu</span>
           </nuxt-link>
           <div class="menu is-flex is-align-items-center">
-            <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'posts'}">
-              Posts
-            </nuxt-link>
+            <!-- <nuxt-link to="/posts" :class="{routeAccent: currentRouteName === 'posts'}"> -->
+            <!--   Posts -->
+            <!-- </nuxt-link> -->
             <nuxt-link to="/source" :class="{routeAccent: currentRouteName === 'source'}">
               Source
             </nuxt-link>
+          </div>
+          <div class="language is-flex is-align-items-center" @click="changeLanguage()">
+            eng/rus
           </div>
         </div>
         <div class="is-flex is-align-items-center">
@@ -35,15 +38,15 @@
                   </p>
                 </div>
               </template>
-              <client-only>
-                <nuxt-link to="/posts">
-                  <b-dropdown-item aria-role="listitem">
-                    <p :class="{mobileRouteAccent: currentRouteName === 'posts'}">
-                      Posts
-                    </p>
-                  </b-dropdown-item>
-                </nuxt-link>
-              </client-only>
+              <!-- <client-only> -->
+              <!--   <nuxt-link to="/posts"> -->
+              <!--     <b-dropdown-item aria-role="listitem"> -->
+              <!--       <p :class="{mobileRouteAccent: currentRouteName === 'posts'}"> -->
+              <!--         Posts -->
+              <!--       </p> -->
+              <!--     </b-dropdown-item> -->
+              <!--   </nuxt-link> -->
+              <!-- </client-only> -->
               <client-only>
                 <nuxt-link to="/source">
                   <b-dropdown-item aria-role="listitem">
@@ -63,12 +66,17 @@
 </template>
 
 <script>
+import { mapActions } from 'pinia';
+import { useAppStore } from "@/store/useAppStore";
 import HomeIcon from "@/assets/icons/iconmonstr-home-6.svg";
 import DropDownMenuIcon from "@/assets/icons/iconmonstr-arrow-31.svg";
 export default {
   components: {
     HomeIcon,
     DropDownMenuIcon
+  },
+  methods: {
+    ...mapActions(useAppStore, ["changeLanguage"])
   },
   computed: {
     currentRouteName () {
@@ -85,7 +93,6 @@ export default {
         top: 0;
         width: 100%;
         height: $offsetVal * 2 + px;
-        // background: rgba(237, 216, 52, 0.2);
         background: rgba(34, 32, 76, 0.2);
         backdrop-filter: blur(10px);
 
@@ -126,6 +133,17 @@ export default {
                     color: $brown;
                 }
             }
+        }
+
+        .language {
+            @media screen and (min-width:0px) and (max-width:546px) {
+                margin: 0;
+            }
+
+            margin: $offsetVal / 2 + px;
+            cursor: pointer;
+            color: $purple;
+            font-weight: bold;
         }
 
         .mobileMenuContainer {

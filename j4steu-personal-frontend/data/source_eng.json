@@ -1,0 +1,12 @@
+{
+    "Source": {
+        "Creator": "Eugene Nikonov",
+        "Copyright": "© 2021 J4stEu.",
+        "Rights": "All Rights Reserved.",
+        "SiteStackTitle": "This site stack",
+        "SiteStack": ["Nuxt.js", "Buefy"],
+        "SiteSourceTitle": "This site source",
+        "SiteSourceName": "J4stEu Personal",
+        "SiteSource": "https://github.com/J4stEu/j4steu-personal"
+    }
+}

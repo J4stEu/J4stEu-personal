@@ -14,7 +14,7 @@
     </article>
     <div class="source">
       <div>
-        <p>This site stack</p>
+        <p>{{ siteStackTitle }}</p>
         <b-taglist>
           <b-tag v-for="stack in siteStack" :key="stack" type="is-dark">
             {{ stack }}
@@ -22,7 +22,7 @@
         </b-taglist>
       </div>
       <div>
-        <p>This site source</p>
+        <p>{{ siteSourceTitle }}</p>
         <a :href="siteSource" target="blank">
           <b-taglist class="is-flex-wrap-nowrap" attached>
             <b-tag type="is-dark">
@@ -31,7 +31,7 @@
               </div>
             </b-tag>
             <b-tag type="is-dark">
-              J4stEu Personal
+              {{ siteSourceName }}
             </b-tag>
           </b-taglist>
         </a>
@@ -59,9 +59,17 @@ export default {
       type: String,
       default: "All Rights Reserved."
     },
+    siteStackTitle: {
+      type: String,
+      default: "This site stack"
+    },
     siteStack: {
       type: Array,
       default: () => ["Nuxt.js", "Buefy"]
+    },
+    siteSourceTitle: {
+      type: String,
+      default: "This site source"
     },
     siteSourceName: {
       type: String,

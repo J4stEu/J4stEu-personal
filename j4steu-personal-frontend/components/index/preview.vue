@@ -13,20 +13,20 @@
           is-flex
         "
       >
-        Hi there, my name is Eugene. I'm a full-stack web-developer based in Saint Petersburg!
+        {{ leftTitle }}
       </h1>
       <h1
         class="
           column
         "
       >
-        Almost self-tought, I've been developing myself in this sphere since 2015.
+        {{ rightTitle }}
       </h1>
     </div>
     <div class="columns bottomPreview">
       <div class="column is-flex is-justify-content-center">
         <div class="is-flex is-flex-direction-column is-justify-content-center">
-          <h1>Eugene Nikonov</h1>
+          <h1>{{ creator }}</h1>
           <p>Digital Artificer (Developer / Designer)</p>
         </div>
       </div>
@@ -36,6 +36,25 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    leftTitle: {
+      type: String,
+      default: ""
+    },
+    rightTitle: {
+      type: String,
+      default: ""
+    },
+    creator: {
+      type: String,
+      default: ""
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
     section {

@@ -26,7 +26,7 @@
         "
     >
       <div
-        v-for="(chip, chipName) in chips.Chips"
+        v-for="(chip, chipName) in chips"
         :key="chipName"
       >
         <b-tag type="is-info">
@@ -58,10 +58,13 @@ export default {
     JUIllustration,
     InfoIcon
   },
-  data () {
-    return {
-      chips: require("~/data/chips.json")
-    };
+  props: {
+    chips: {
+      type: Object,
+      default () {
+        return {};
+      }
+    }
   }
 };
 </script>

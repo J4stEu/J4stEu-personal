@@ -6,10 +6,10 @@
         is-max-desktop
     "
   >
-    <h1>Find me here</h1>
+    <h1>{{ title }}</h1>
     <div class="is-flex is-flex-direction-column">
       <a
-        v-for="(contactItem, contactName) in contacts.Contacts"
+        v-for="(contactItem, contactName) in contacts"
         :key="contactName"
         :href="contactItem.Src"
         target="blank"
@@ -44,9 +44,26 @@ export default {
     FileIcon,
     EmailIcon
   },
+  props: {
+    title: {
+      type: String,
+      default: "Works"
+    },
+    contacts: {
+      type: Object,
+      default () {
+        return {
+          C1: {
+            Title: "@ J4stEu",
+            Src: "https://github.com/J4stEu",
+            Icon: "github"
+          }
+        };
+      }
+    }
+  },
   data () {
     return {
-      contacts: require("~/data/contacts.json"),
       icons: {
         github: GithubIcon,
         mail: EmailIcon,

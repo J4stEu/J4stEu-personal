@@ -52,6 +52,7 @@ export default {
         border-bottom: 2px solid $purple;
         display: inline;
         width: min-content;
+        white-space: nowrap;
     }
     div {
       display: flex;

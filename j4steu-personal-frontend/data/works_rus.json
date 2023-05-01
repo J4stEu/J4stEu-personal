@@ -1,0 +1,53 @@
+{
+    "Title": "Некоторые проекты",
+    "Works": [
+        {
+          "ID": 1,
+          "Title": "pocket-blockchin",
+          "Preview": "https://raw.githubusercontent.com/J4stEu/pocket-blockchain/master/blockchain_frontend/src/assets/favicon.png", 
+          "Src": "https://github.com/J4stEu/pocket-blockchain",
+          "Info": "Создание blockchain системы на Python для будущей интеграции в различного рода проекты",
+          "Stack": ["Python Flask", "PostgreSQL", "Vue.js 3"]
+        },
+        {
+          "ID": 2,
+          "Title": "solib",
+          "Preview": "https://raw.githubusercontent.com/J4stEu/J4stEu.github.io/main/j4steu-personal-frontend/static/favicon.png",
+          "Src": "https://github.com/J4stEu/solib",
+          "Info": "Solib - музыкальный стриминговый сервис",
+          "Stack": ["Golang", "PosgreSQL", "Vue.js 3"]
+        },
+        {
+          "ID": 3,
+          "Title": "engs",
+          "Preview": "https://raw.githubusercontent.com/J4stEu/engs/master/engs_frontend/public/favicon.ico",
+          "Src": "https://github.com/J4stEu/engs",
+          "Info": "Engs - English School. Особенный для меня проект, так как он является перерождением моего первого проекта в сфере веб-разработки. Этот сайт посвящен английской школе моего отца. О нас, галерея, новости, контакты и многое другое",
+          "Stack": ["Python Flask", "MySQL / MariaDB", "Vue.js 2"]
+        },
+        {
+          "ID": 4,
+          "Title": "magister",
+          "Preview": "https://github.com/J4stEu/magister/blob/main/icons/main_icon.png?raw=true",
+          "Src": "https://github.com/J4stEu/magister",
+          "Info": "Проект для преподавателей и студентов для выполнения конкретной / научной работы без необходимости думать о личном обмене документами",
+          "Stack": ["PHP + RedBeanPHP ORM", "MySQL / MariaDB", "HTML / CSS", "jQuery"]
+        },
+        {
+          "ID": 5,
+          "Title": "ipleak",
+          "Preview": "https://raw.githubusercontent.com/J4stEu/ipleak/master/frontend/ipleak/public/favicon.ico",
+          "Src": "https://github.com/J4stEu/ipleak",
+          "Info": "IPleak — приложение, которое может дать информацию о пользователе по его IP-адресу",
+          "Stack": ["Python Flask", "Vue.js 2"]
+        },
+        {
+          "ID": 6,
+          "Title": "hard-reject",
+          "Preview": "https://raw.githubusercontent.com/J4stEu/hard-reject/master/icons/main_icon.png",
+          "Src": "https://github.com/J4stEu/hardReject",
+          "Info": "Проект для start-up интузиастов. Публикуй свой проект, привлекай инвесторов",
+          "Stack": ["PHP + RedBeanPHP ORM", "MySQL / MariaDB", "HTML / CSS", "jQuery"]
+        }
+    ]
+}
